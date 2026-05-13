@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <style>
         body{
             margin: 0;
             padding: 0;
+            font-family: sans-serif;
         }
         .H1{
             padding: 10px;
             background-color: rgba(74, 3, 3, 0.782);
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
             color: antiquewhite;
             margin:0% ;
+            
         }
         nav{
             display: flex;
@@ -30,11 +33,25 @@
         .H2{
             width: 20%;
         }
-        .O1{
-            padding-right: 35px;
-            padding-left: 35px;
+       
+         .B{
+            padding: 15px;
+            border-radius: 25px;
+            width: 160px;
             background-color: white;
-            border-radius: 30px;
+            text-align: center;
+            color: black;
+         }
+         .B:hover{
+            background-color: brown;
+            color: white;
+         }
+        .l{
+            font-size: 25px;
+            width:2%;
+        }
+        .H{
+            display: flex;
             justify-content: center;
         }
     </style>
@@ -43,13 +60,19 @@
     <header class="H1">
         <h2 class="H2">Foody</h2>
         <nav>
+            <i class="fa-graphite fa-thin fa-bag-shopping"></i>
             <a>Home</a>
             <a>About</a>
             <a>Menu</a>
             <a>Gallery</a>
             <a>Contact</a>
         </nav>
-        <div class="O1"><h4>Order Now</h4></div>
+        <div class="l"> 
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <div>
+            <div class="B">Order Now</div>
+        </div>
     </header>
 </body>
 </html>
