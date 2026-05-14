@@ -5,85 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="CSS/Index.css">
     <style>
-        body{
-            background-color: bisque;
-        }
-        .i1{
-            height: 280px;
-            position: absolute ;
-            
-        }
-        .i2{
-            height: 200px;
-        }
-        .i3{
-            height: 160px;
-            width: 160px;
-            border-radius: 120px;
-        }
-        .t{
-            color: rgb(59, 42, 34);
-            font-family: sans-serif;
-            font-size: 60px;
-            font-weight: 10;
-        }
-        .R1{
-            height: 130px;
-            width: 130px;
-            border-radius: 150px;
-            background-color: darkgoldenrod;
-        }
-        .R2{
-            height: 170px;
-            width: 170px;
-            border-radius: 250px;
-            background-color: rgba(151, 39, 39, 0.36);
-            margin-top: 10%;
-        }
-        image{
-            position: relative;
-        }
-        .content{
-            padding: 10px;
-            display: flex;
-            justify-content: space-around;
-            height: 500px;
-            align-items: center;
-        }
-        .D2{
-            width: 50%;
-            text-align: center;
-            align-items: center;
-            height: 100%;
-        }
-        .t1{
-            font-family: sans-serif;
-            font-size: 20px;
-            font-weight: 10;
-        }
-        .B1{
-            padding: 15px;
-            border-radius: 25px;
-            width: 160px;
-            background-color: rgb(59, 42, 34);
-            text-align: center;
-            color: white;
-            justify-self: center;
-            margin-top: 10%;
-         }
-         .B1:hover{
-            background-color: brown;
-         }  
-         .D3{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-         }
-         .D1{
-            height: 100%;
-         }
         
     </style>
 </head>
@@ -92,9 +15,11 @@
 
     <div class="content">
         <div class="D1">
-            <div class="R2">
+            <svg height="300px" width="300px">
+                <circle fill="rgb(57, 42, 34)" r="90" cy="205" cx="100"></circle>
                 <img src="Images/i1.avif" class="i1"></img>
-            </div>
+            </svg>
+                
         </div>
 
        <div class="D2">
@@ -104,11 +29,69 @@
         </div>
 
         <div class="D3">
-            <div class="R1"><img src="Images/i2.avif" class="i2"></img></div>
+             <svg height="350px" width="350px">
+                <circle fill="#B59410" r="58" cy="130" cx="170">
+                </circle>
+                <img src="Images/i2.avif" class="i2"></img>
+                
+            </svg>
             <div class="d"><img src="Images/i3.avif" class="i3"></img></div>
         </div>
     </div>
     
+
+    <div class="D4">
+        <img src="Images/i4.svg" class="i4"></img>
+        <h2>Today’s Roast: Ethiopian Yirgacheffe — Notes of citrus & jasmine.</h2>
+    </div>
+
+    <h1 class="h">What do we serve?</h1>
+
+    <div class="D5">
+        <div class="D6">
+            <img src="Images/i5.avif" class="i5"></img>
+            <div>
+                <h1 class="Heading">Coffee Classics</h1>
+                <h3 class="Detail">Brews made with care deliver comfort and tradition.</h3>
+            </div>
+        </div>
+        <div class="D7">
+            <img src="Images/i6.avif" class="i5"></img>
+            <div>
+                <h1 class="Heading">Specialty Lattes</h1>
+                <h3 class="Detail">Creative drinks to brighten mornings.</h3>
+            </div>
+        </div>
+        <div class="D8">
+            <img src="Images/i7.avif" class="i5"></img>
+            <div>
+                <h1 class="Heading">Pastries & Treats</h1>
+                <h3 class="Detail">Freshly baked daily to pair with coffee.</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="e">
+        <div class="Explore">Explore our Menu</div>
+    </div> 
+
+
+    <div class="D9">
+        <div class="D10">
+            <div class="d1"> 
+                Ready for Your Perfect Cup?
+            </div>
+            <div class="d2">Order something tasty today!</div>
+            <div class="d3">Order Now</div>
+        </div>
+        <div class="D11">
+            <svg height="300px" width="300px">
+                <circle r="45" cy="80" cx="800" fill="#B59410"></circle>
+            </svg>
+            <img src="Images/i8.avif" class="i8"></img>
+        </div>
+    </div>
+
     <div id="f1"></div>
 
     <script>
