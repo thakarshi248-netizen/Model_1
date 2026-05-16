@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <link rel="stylesheet" href="CSS/Order.css">
+    <title>Order</title>
+</head>
+<body>
+    <div id="h1"></div>
+
+    <div class="Cart">
+        <div class="D">
+            <div class="d1">
+                <img src="Images/p1.avif" class="p1">
+                <div class="d2">
+                    <p class="P1">Classic Cap</p>
+                    <p class="P2">$18.00</p>
+                </div>
+                <div class="d3" onclick="addToCart()">Add to Bag</div>
+            </div>
+            
+            <div class="d1">
+                <img src="Images/p2.avif" class="p1">
+                <div class="d2">
+                    <p class="P1">Face Serum</p>
+                    <p class="P2">$51.00</p>
+                </div>
+                <div class="d3" onclick="add()">Add to Bag</div>
+            </div>
+
+            <div class="d1">
+                <img src="Images/p3.avif" class="p1">
+                <div class="d2">
+                    <p class="P1">Handmade Vase</p>
+                    <p class="P2">$25.00</p>
+                </div>
+                <div class="d3" onclick="add()">Add to Bag</div>
+            </div>
+        </div>
+        <div class="D2" id="D2" >
+                <h2>Cart</h2>
+                <ul id="cart-items"></ul>
+        </div>
+    </div>
+    
+    
+    <div id="f1"></div>
+    <script>
+        $(document).ready(function(){
+            $("#h1").load('Header.html')
+            $("#f1").load('Footer.html')
+        })
+    </script>
+     <script src="JS/Cart.js"></script>
+</body>
+</html>
