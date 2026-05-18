@@ -1,59 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
+
+    <title>Shopping Cart</title>
+
     <link rel="stylesheet" href="CSS/Order.css">
-    <title>Order</title>
 </head>
+
 <body>
     <div id="h1"></div>
+    <div class="container">
 
-    <div class="Cart">
-        <div class="D">
-            <div class="d1">
-                <img src="Images/p1.avif" class="p1">
-                <div class="d2">
-                    <p class="P1">Classic Cap</p>
-                    <p class="P2">$18.00</p>
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h2>Browse by</h2>
+
+        <p>All products</p>
+
+    </div>
+
+    <!-- SHOP CONTENT -->
+
+    <div class="shop-content">
+
+        <!-- SHOP HEADER -->
+
+        <div class="shop-header">
+
+            <div>
+
+                <h1>All products</h1>
+
+                <p class="product-count">
+                    12 products
+                </p>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="right-header">
+
+                <!-- SEARCH -->
+
+                <div class="search-box">
+
+                    <span class="search-icon">
+                        🔍
+                    </span>
+
+                    <input type="text"
+                        placeholder="Search products"
+                        id="searchInput">
+
                 </div>
-                <div class="d3" onclick="addToCart()">Add to Bag</div>
+
+                <!-- SORT -->
+
+                <div class="sort-box">
+
+                    <span>Sort by:</span>
+
+                    <select>
+
+                        <option>
+                            Default
+                        </option>
+
+                        <option>
+                            Price Low
+                        </option>
+
+                        <option>
+                            Price High
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCTS -->
+
+        <div class="products">
+
+            <!-- YOUR PRODUCT CARDS -->
+
+        </div>
+
+    </div>
+
+</div>
+    <div class="container">
+
+        <!-- PRODUCTS -->
+
+        <div class="products">
+
+            <!-- PRODUCT 1 -->
+
+            <div class="card">
+
+                <img src="Images/p1.avif">
+
+                <h3>Classic Cap</h3>
+
+                <p>$18.00</p>
+
+                <button
+                    onclick="addToCart(
+                    'Classic Cap',
+                    18.00,
+                    'Images/p1.avif'
+                )" class="i">
+
+                    Add to Bag
+
+                </button>
+
             </div>
             
-            <div class="d1">
-                <img src="Images/p2.avif" class="p1">
-                <div class="d2">
-                    <p class="P1">Face Serum</p>
-                    <p class="P2">$51.00</p>
-                </div>
-                <div class="d3" onclick="add()">Add to Bag</div>
+
+            <!-- PRODUCT 2 -->
+
+            <div class="card">
+
+                <img src="Images/p2.avif">
+
+                <h3>Face Serum</h3>
+
+                <p>$51.00</p>
+
+                <button
+                    onclick="addToCart(
+                    'Face Serum',
+                    51.00,
+                    'Images/p2.avif'
+                )" class="i">
+
+                    Add to Bag
+
+                </button>
+
             </div>
 
-            <div class="d1">
-                <img src="Images/p3.avif" class="p1">
-                <div class="d2">
-                    <p class="P1">Handmade Vase</p>
-                    <p class="P2">$25.00</p>
-                </div>
-                <div class="d3" onclick="add()">Add to Bag</div>
+            <!-- PRODUCT 3 -->
+
+            <div class="card">
+
+                <img src="Images/p3.avif">
+
+                <h3>Handmade Vase</h3>
+
+                <p>$25.00</p>
+
+                <button
+                    onclick="addToCart(
+                    'Handmade Vase',
+                    25.00,
+                    'Images/p3.avif'
+                )" class="i">
+
+                    Add to Bag
+
+                </button>
+                
             </div>
+            
+            <div class="card">
+
+                <img src="Images/p4.avif">
+
+                <h3>Hand soap</h3>
+
+                <p>$10.00</p>
+
+                <button
+                    onclick="addToCart(
+                    'Hand soap',
+                    10.00,
+                    'Images/p4.avif'
+                )" class="i">
+
+                    Add to Bag
+
+                </button>
+
+            </div>
+            <div class="card">
+
+                <img src="Images/p5.avif">
+
+                <h3>Set of plates</h3>
+
+                <p>$30.00</p>
+
+                <button
+                    onclick="addToCart(
+                    'Set of plates',
+                    30.00,
+                    'Images/p5.avif'
+                )" class="i">
+
+                    Add to Bag
+
+                </button>
+
+            </div>
+            <div class="card">
+
+                <img src="Images/p6.avif">
+
+                <h3>Sunglasses</h3>
+
+                <p>$45.00</p>
+
+                <button
+                    onclick="addToCart(
+                    'Sunglasses',
+                    45.00,
+                    'Images/p6.avif'
+                )" class="i">
+
+                    Add to Bag
+
+                </button>
+
+            </div>
+
+             <div class="card">
+
+                <img src="Images/p7.avif">
+
+                <h3>Wooden Chair</h3>
+
+                <p>$132.00</p>
+
+                <button
+                    onclick="addToCart(
+                    'Wooden Chair',
+                    132.00,
+                    'Images/p7.avif'
+                )" class="i">
+
+                    Add to Bag
+
+                </button>
+
+            </div>
+            
+
+            <!-- PRODUCT 2 -->
+
+            <div class="card">
+
+                <img src="Images/p8.avif">
+
+                <h3>Wool Sweater</h3>
+
+                <p>$51.00</p>
+
+                <button
+                    onclick="addToCart(
+                    'Wool Sweater',
+                    51.00,
+                    'Images/p8.avif'
+                )" class="i">
+
+                    Add to Bag
+
+                </button>
+
+            </div>
+
+            <!-- PRODUCT 3 -->
+
+            <div class="card">
+
+                <img src="Images/p9.avif">
+
+                <h3>Creative Course Session</h3>
+
+                <p>$35.00 | 45 min</p>
+
+                <button
+                    onclick="addToCart(
+                    'Creative Course Session',
+                    35.00,
+                    'Images/p9.avif'
+                )" class="i">
+
+                    Add to Bag
+
+                </button>
+                
+            </div>
+            
+            <div class="card">
+
+                <img src="Images/p10.avif">
+
+                <h3>Group Fitness Class</h3>
+
+                <p>$15.00 | 15 min</p>
+
+                <button
+                    onclick="addToCart(
+                    'Group Fitness Class',
+                    15.00,
+                    'Images/p10.avif'
+                )" class="i">
+
+                    Add to Bag
+
+                </button>
+
+            </div>
+            <div class="card">
+
+                <img src="Images/p11.avif">
+
+                <h3>Individual Coaching Session</h3>
+
+                <p>$60.00 | 1 h</p>
+
+                <button
+                    onclick="addToCart(
+                    'Individual Coaching Session',
+                    60.00,
+                    'Images/p11.avif'
+                )" class="i">
+
+                    Add to Bag
+
+                </button>
+
+            </div>
+            <div class="card">
+
+                <img src="Images/p12.avif">
+
+                <h3>Intro language tutorial session</h3>
+
+                <p>Free | 45 min</p>
+
+                <button
+                    onclick="addToCart(
+                    'Intro language tutorial session',
+                    Free,
+                    'Images/p12.avif'
+                )" class="i">
+
+                    Add to Bag
+
+                </button>
+
+            </div>
+
         </div>
-        <div class="D2" id="D2" >
-                <h2>Cart</h2>
-                <ul id="cart-items"></ul>
+        <!-- TOP TO BOTTOM BUTTON -->
+
+    <button id="topBtn" onclick="scrollToTop()">
+    ↑
+</button>
+
+        <!-- CART -->
+
+        <div class="cart-box" id="cartBox">
+
+            <div class="cart-header">
+
+                <h2>Shopping Cart</h2>
+
+                <button class="close-btn"
+                    onclick="closeCart()">
+
+                    X
+
+                </button>
+
+            </div>
+
+            <ul id="cart-items"></ul>
+
+            <h3 class="total">
+                Total : $<span id="total">0</span>
+            </h3>
+
+            <!-- CHECKOUT -->
+
+            <button class="checkout-btn"
+                onclick="checkout()">
+
+                Checkout
+
+            </button>
+
         </div>
+
     </div>
-    
-    
     <div id="f1"></div>
-    <script>
+     <script>
         $(document).ready(function(){
             $("#h1").load('Header.html')
             $("#f1").load('Footer.html')
         })
     </script>
-     <script src="JS/Cart.js"></script>
+
+    <script src="JS/Cart.js"></script>
+
 </body>
+
 </html>
