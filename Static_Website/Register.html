@@ -29,20 +29,20 @@
             <form id="registerForm">
 
                 <input type="text"
-                    placeholder="Full Name"
-                    required>
+                    id="name"
+                    placeholder="Full Name">
 
                 <input type="email"
-                    placeholder="Email Address"
-                    required>
+                    id="email"
+                    placeholder="Email Address">
 
                 <input type="password"
-                    placeholder="Password"
-                    required>
+                    id="password"
+                    placeholder="Password">
 
                 <input type="password"
-                    placeholder="Confirm Password"
-                    required>
+                    id="confirmPassword"
+                    placeholder="Confirm Password">
 
                 <button type="submit">
                     Register
@@ -73,12 +73,60 @@
 
             e.preventDefault();
 
-            alert("Registration Successful!");
+            let name =
+            document.getElementById("name").value;
 
-            // GO TO LOGIN PAGE
+            let email =
+            document.getElementById("email").value;
 
-            window.location.href =
-            "login.html";
+            let password =
+            document.getElementById("password").value;
+
+            let confirmPassword =
+            document.getElementById("confirmPassword").value;
+
+            // EMAIL REGEX
+
+            let emailPattern =
+            /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            // VALIDATION
+
+            if(name === "" ||
+               email === "" ||
+               password === "" ||
+               confirmPassword === ""){
+
+                alert("All fields are required");
+            }
+
+            else if(name.length < 3){
+
+                alert("Name must be minimum 3 characters");
+            }
+
+            else if(!email.match(emailPattern)){
+
+                alert("Enter valid email");
+            }
+
+            else if(password.length < 6){
+
+                alert("Password must be minimum 6 characters");
+            }
+
+            else if(password !== confirmPassword){
+
+                alert("Passwords do not match");
+            }
+
+            else{
+
+                alert("Registration Successful!");
+
+                window.location.href =
+                "login.html";
+            }
 
         });
 

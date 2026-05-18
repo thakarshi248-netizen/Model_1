@@ -39,7 +39,14 @@
         }
         i{
             font-size: 30px;
+            height: 40px;
         }
         i .fa-brands :hover{
             background-color: brown;
+        }
+
+        .F4 i:hover{
+           color: brown;
+           box-shadow: 5;
+           transform: translateY(-24px);
         }

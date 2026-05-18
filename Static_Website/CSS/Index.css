@@ -246,3 +246,8 @@ image{
 .D11 svg{
     position: fixed;
 }
+
+.i5:hover{
+    zoom:105%;
+}
+

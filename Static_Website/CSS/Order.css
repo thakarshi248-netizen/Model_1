@@ -42,7 +42,7 @@ body{
     display:flex;
     gap:50px;
     margin-top: 0;
-    padding:60px 8%;
+    padding:50px 8%;
 }
 
 /* =========================
@@ -121,6 +121,7 @@ body{
 
 .card{
     transition:0.3s;
+    
 }
 
 .card:hover{
@@ -411,4 +412,7 @@ p{
 #topBtn:hover{
     background:#5b3728;
     transform:translateY(-5px);
+}
+#h1{
+  
 }

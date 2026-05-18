@@ -20,7 +20,7 @@
 
         <div class="auth-box">
 
-            <h1>Login</h1>
+            <h1>Login to Foody</h1>
 
             <p class="sub-text">
                 Login to continue
@@ -29,12 +29,12 @@
             <form id="loginForm">
 
                 <input type="email"
-                    placeholder="Email Address"
-                    required>
+                    id="loginEmail"
+                    placeholder="Email Address">
 
                 <input type="password"
-                    placeholder="Password"
-                    required>
+                    id="loginPassword"
+                    placeholder="Password">
 
                 <button type="submit">
                     Login
@@ -65,12 +65,44 @@
 
             e.preventDefault();
 
-            alert("Login Successful!");
+            let email =
+            document.getElementById("loginEmail").value;
 
-            // GO TO HOME PAGE
+            let password =
+            document.getElementById("loginPassword").value;
 
-            window.location.href =
-            "Index.html";
+            // EMAIL REGEX
+
+            let emailPattern =
+            /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            // VALIDATION
+
+            if(email === "" || password === ""){
+
+                alert("All fields are required");
+
+            }
+
+            else if(!email.match(emailPattern)){
+
+                alert("Enter valid email");
+
+            }
+
+            else if(password.length < 6){
+
+                alert("Password must be minimum 6 characters");
+
+            }
+
+            else{
+
+                alert("Login Successful!");
+
+                window.location.href =
+                "Index.html";
+            }
 
         });
 
