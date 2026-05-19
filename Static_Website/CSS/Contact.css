@@ -6,7 +6,7 @@
     color: rgb(59, 42, 34);
     height: 80px;
     align-content: center;
-    margin-top: 20px;
+    margin-top: 7%;
 }
 .d2{
     height: 630px;
@@ -17,7 +17,6 @@
 .d3{
     height: 80%;
     width: 60%;
-   
     padding-left: 5%;
 }
 .d5{
@@ -25,7 +24,7 @@
     width: 30%;
 }
 label{
-    color: rgb(59, 42, 34);
+    color: rgb(72, 49, 38);
     font-size: 18px;
 }
 input{

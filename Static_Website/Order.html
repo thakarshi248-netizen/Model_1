@@ -30,72 +30,100 @@
     <div class="shop-content">
 
         <!-- SHOP HEADER -->
+<!-- SHOP HEADER -->
 
-        <div class="shop-header">
+<div class="shop-header">
 
-            <div>
+    <div>
 
-                <h1>All products</h1>
+        <h1>All products</h1>
 
-                <p class="product-count">
-                    12 products
-                </p>
+        <p class="product-count">
+            12 products
+        </p>
 
-            </div>
+    </div>
 
-            <!-- RIGHT SIDE -->
+</div>
 
-            <div class="right-header">
+<!-- CONTROLS -->
 
-                <!-- SEARCH -->
+<div class="controls">
 
-                <div class="search-box">
+    <!-- SEARCH -->
 
-                    <span class="search-icon">
-                        🔍
-                    </span>
+    <div class="search-box">
 
-                    <input type="text"
-                        placeholder="Search products"
-                        id="searchInput">
+        <span class="search-icon">🔍</span>
 
-                </div>
+        <input 
+        type="text"
+        placeholder="Search products..."
+        id="searchInput">
 
-                <!-- SORT -->
+    </div>
 
-                <div class="sort-box">
+    <!-- SORT -->
 
-                    <span>Sort by:</span>
+    <div class="sort-box">
 
-                    <select>
+        <label>Sort</label>
 
-                        <option>
-                            Default
-                        </option>
+        <select id="sortSelect">
 
-                        <option>
-                            Price Low
-                        </option>
+            <option value="default">
+                Default
+            </option>
 
-                        <option>
-                            Price High
-                        </option>
+            <option value="low">
+                Price Low → High
+            </option>
 
-                    </select>
+            <option value="high">
+                Price High → Low
+            </option>
 
-                </div>
+        </select>
 
-            </div>
+    </div>
 
-        </div>
+    <!-- FILTER -->
+
+    <div class="filter-box">
+
+        <label>Filter</label>
+
+        <select id="filterPrice">
+
+            <option value="all">
+                All Prices
+            </option>
+
+            <option value="0-20">
+                $0 - $20
+            </option>
+
+            <option value="21-50">
+                $21 - $50
+            </option>
+
+            <option value="51-100">
+                $51 - $100
+            </option>
+
+            <option value="101">
+                Above $100
+            </option>
+
+        </select>
+
+    </div>
+
+</div>
 
         <!-- PRODUCTS -->
 
-        <div class="products">
-
-            <!-- YOUR PRODUCT CARDS -->
-
-        </div>
+    
 
     </div>
 
@@ -356,7 +384,7 @@
                 <button
                     onclick="addToCart(
                     'Intro language tutorial session',
-                    Free,
+                    0,
                     'Images/p12.avif'
                 )" class="i">
 

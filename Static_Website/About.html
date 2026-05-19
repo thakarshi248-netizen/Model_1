@@ -71,9 +71,96 @@
        
     </div>
 
+    <!-- FAQ SECTION -->
+
+<div class="faq-section">
+
+    <h1 class="faq-title">Frequently Asked Questions</h1>
+
+    <div class="faq">
+
+        <button class="faq-question">
+            What makes Aurevo coffee special?
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                We carefully source premium coffee beans and roast them in small batches to maintain rich flavor and freshness.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="faq">
+
+        <button class="faq-question">
+            Do you offer vegetarian or vegan options?
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Yes, we provide a variety of vegetarian and vegan pastries, snacks, and beverages.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="faq">
+
+        <button class="faq-question">
+            Can I work or study at Aurevo?
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Absolutely! Aurevo is designed to be a comfortable and welcoming place for work, study, and relaxation.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="faq">
+
+        <button class="faq-question">
+            Do you host private events?
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Yes, we host small gatherings, workshops, and private coffee events. Contact us for more details.
+            </p>
+        </div>
+
+    </div>
+
+</div>
 
     <div id="f1"></div>
+    <script>
 
+    let questions =
+    document.querySelectorAll(".faq-question");
+
+    questions.forEach((question)=>{
+
+        question.addEventListener("click",()=>{
+
+            let answer =
+            question.nextElementSibling;
+
+            if(answer.style.display === "block"){
+
+                answer.style.display = "none";
+
+            }else{
+
+                answer.style.display = "block";
+            }
+        });
+
+    });
+
+</script>
     <script>
         $(document).ready(function(){
             $("#h1").load('Header.html')

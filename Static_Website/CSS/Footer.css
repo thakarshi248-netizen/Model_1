@@ -5,13 +5,14 @@
         }
         .F{
             height: 350px;
-            background-color: rgba(74, 3, 3, 0.782);;
+            background-color: rgb(103, 37, 37);
             padding: 30px;
             padding-bottom: 0;
             display: flex;
             justify-content: space-between;
             color: antiquewhite;
             align-content: center;
+            opacity: 1;
         }
         .F1,.F2,.F3{
             display: flex;
