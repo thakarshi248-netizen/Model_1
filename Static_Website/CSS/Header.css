@@ -1,57 +1,56 @@
-    body{
-                margin: 0;
-                padding: 0;
-                font-family: sans-serif;
-                background-color: aliceblue;
-            }
-            .H1{
-                padding: 10px;
-                background-color: rgb(103, 37, 37);
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                color: antiquewhite;
-                margin:0% ;
-                width: 100%;
-                position: fixed;
-                top: 0;
-                z-index: 1000;
-                opacity: 1;
-                
-            }
-            nav{
-                display: flex;
-                justify-content: space-between;
-                width: 40%;
-            }
-            nav a:hover{
-            text-decoration: underline; 
-            }
-            .H2{
-                width: 20%;
-            }
-        
-            .B{
-                padding: 15px;
-                border-radius: 25px;
-                width: 160px;
-                background-color: white;
-                text-align: center;
-                color: black;
-            }
-            .B:hover{
-                background-color: brown;
-                color: white;
-            }
-            .l{
-                font-size: 25px;
-                width:2%;
-            }
-            .H{
-                display: flex;
-                justify-content: center;
-            }
-            a{
-                text-decoration: none;
-                color: antiquewhite;
-            }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: aliceblue;
+}
+.H1{
+    padding: 8px;
+    background-color: rgb(103, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: antiquewhite;
+    margin:0% ;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    opacity: 1;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+nav a:hover{
+text-decoration: underline; 
+}
+.H2{
+    width: 20%;
+}
+
+.B{
+    padding: 15px;
+    border-radius: 25px;
+    width: 160px;
+    background-color: aliceblue;
+    text-align: center;
+    color: black;
+}
+.B:hover{
+    background-color: rgb(222, 178, 178);
+}
+.l{
+    font-size: 25px;
+    width:2%;
+}
+.H{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}

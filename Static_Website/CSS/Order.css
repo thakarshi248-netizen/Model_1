@@ -353,7 +353,7 @@ body{
 .i{
     height: 50px;
     width: 80%;
-    background-color: #5b3728;;
+    background-color: rgb(103, 37, 37); 
     border-radius: 25px;
     color: white;
     font-size: 15px;

@@ -11,6 +11,10 @@
     </style>
 </head>
 <body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="coffee-loader"></div>
+    </div>
     <div id="h1"></div>
 
     <div class="content">
@@ -96,9 +100,18 @@
 
     <script>
         $(document).ready(function(){
+
             $("#h1").load('Header.html')
             $("#f1").load('Footer.html')
-        })
+
+            /* Hide Loader After Page Loads */
+            $(window).on("load", function () {
+
+                $("#loader").fadeOut(1000);
+
+            });
+
+        });
     </script>
 </body>
 </html>
