@@ -1,0 +1,49 @@
+.content{
+  background-color: rgb(226, 248, 255);
+  display: flex;
+  flex-direction: column;
+}
+.App{
+  background-color:  rgb(226, 248, 255);
+  text-align: center;
+  padding: 2%;
+}
+li{
+    color:black ;
+}
+Link{
+  display: flex;
+  padding-left: 2%;
+}
+footer{
+  padding: 2%;
+  background-color: rgb(53, 179, 184);
+  text-align: center;
+}
+.main{
+  height: 350px;
+  text-align: center;
+  padding: 3%;
+}
+.n{
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  height: 70px;
+  align-items: center;
+  background-color: rgb(53, 179, 184);
+  list-style: none;
+}
+#p1{
+  color: red;
+}
+.D{
+  display: flex;
+  justify-content: center;
+}
+h2{
+  text-align: center;
+}
+th,td{
+  border: 1px solid black;
+}

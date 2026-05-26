@@ -1,0 +1,48 @@
+{
+  "hash": "c7c4ea75",
+  "configHash": "e4da4a8c",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "cb4917d2",
+  "optimized": {
+    "react-dom/client": {
+      "src": "../../src/node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "0b5f1ca0",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../src/node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "de5d6c61",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../src/node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "ddffc80f",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../src/node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "4527e9e8",
+      "needsInterop": true
+    },
+    "web-vitals": {
+      "src": "../../src/node_modules/web-vitals/dist/web-vitals.js",
+      "file": "web-vitals.js",
+      "fileHash": "d611b74c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "react-VhHg0rNx": {
+      "file": "react-VhHg0rNx.js",
+      "isDynamicEntry": false
+    },
+    "react-dom-C1hPEnns": {
+      "file": "react-dom-C1hPEnns.js",
+      "isDynamicEntry": false
+    }
+  }
+}
