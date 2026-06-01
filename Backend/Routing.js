@@ -20,4 +20,7 @@ http.createServer((req,res)=>{
             }
         });
     }
+    else{
+        res.end("<h1>File Not Found!</h1>");
+    }
 }).listen(8080);
