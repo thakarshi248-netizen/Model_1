@@ -21,7 +21,9 @@ function Register()
                 "https://opulent-space-disco-q7rrqwj9vp9wfxgr6-5500.app.github.dev/signup",
                 { Name, Email, Password }
             );
-
+            setName("");
+            setEmail("");
+            setPassword("");
             console.log("Success:", response.data);
         } catch (error) {
             console.log(error);
