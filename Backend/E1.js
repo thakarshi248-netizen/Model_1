@@ -51,6 +51,10 @@ app.get("/users", async (req, res) => {
     }
 });
 
+app.get("/", (req, res) => {
+    res.send("Hello From Server!");
+});
+
 app.get("/demo", (req, res) => {
     res.sendFile(path.join(__dirname, "Public", "Basic", "Demo.html"));
 });
