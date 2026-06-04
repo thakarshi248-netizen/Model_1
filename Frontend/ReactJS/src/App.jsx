@@ -11,6 +11,7 @@ import Gallery from "./Gallery";
 import Static_Website from "./Static_Website";
 import Show_User from "./Show_User";
 import Home from "./Home";
+import { Analytics } from '@vercel/analytics/react';
 
 function App()
 {
@@ -32,6 +33,7 @@ function App()
         </div> 
       </BrowserRouter>
       <Footer />
+      <Analytics />
     </div>
   )
 }
