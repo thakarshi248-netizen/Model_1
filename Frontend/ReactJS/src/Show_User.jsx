@@ -23,7 +23,7 @@ function Show_User(){
 
     return (
         <div className="table-wrapper">
-    <h2>Registered Users</h2>
+    <h2 className="User">Registered Users</h2>
 
     <table>
         <thead>
