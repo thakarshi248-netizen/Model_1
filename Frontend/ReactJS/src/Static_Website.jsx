@@ -1,6 +1,6 @@
 function Static_Website(){
     const Open_Web=()=>{
-        window.open("https://model-1-1-6iur.onrender.com//website/","_blank");
+        window.open("https://model-1-1-6iur.onrender.com/website/","_blank");
     }
     return(
        <div className="page">
