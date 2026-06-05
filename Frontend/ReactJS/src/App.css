@@ -1,49 +1,178 @@
-.content{
-  background-color: rgb(226, 248, 255);
-  display: flex;
-  flex-direction: column;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.App{
-  background-color:  rgb(226, 248, 255);
-  text-align: center;
-  padding: 2%;
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
 }
-li{
-    color:black ;
+
+/* Page Layout */
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
-Link{
-  display: flex;
-  padding-left: 2%;
+
+/* Common Card */
+.theme-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
-footer{
-  padding: 2%;
-  background-color: rgb(53, 179, 184);
-  text-align: center;
+
+.theme-card h1,
+.theme-card h2 {
+    text-align: center;
+    color: #4f46e5;
+    margin-bottom: 20px;
 }
-.main{
-  height: 350px;
-  text-align: center;
-  padding: 3%;
+
+/* Inputs */
+.theme-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
 }
-.n{
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  height: 70px;
-  align-items: center;
-  background-color: rgb(53, 179, 184);
-  list-style: none;
+
+.theme-input:focus {
+    outline: none;
+    border-color: #4f46e5;
 }
-#p1{
-  color: red;
+
+/* Buttons */
+.theme-btn {
+    width: 100%;
+    padding: 12px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
 }
-.D{
-  display: flex;
-  justify-content: center;
+
+.theme-btn:hover {
+    background: #4338ca;
 }
-h2{
-  text-align: center;
+
+.text-center {
+    text-align: center;
 }
-th,td{
-  border: 1px solid black;
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
 }
+
+/* Table */
+.table-wrapper {
+    width: 95%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #4f46e5;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Gallery */
+.gallery-page {
+    padding: 30px;
+}
+
+.gallery-title {
+    text-align: center;
+    color: #4f46e5;
+    margin-bottom: 10px;
+}
+
+.gallery-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-content {
+    padding: 15px;
+}
+
+.recipe-content h3 {
+    color: #4f46e5;
+    margin-bottom: 10px;
+}
+
+.recipe-details p {
+    margin: 6px 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f5f7fb;   /* light background */
+    color: #1f2937;
+}
+
+.page {
+    min-height: 100vh;
+    padding: 20px;
+}
+

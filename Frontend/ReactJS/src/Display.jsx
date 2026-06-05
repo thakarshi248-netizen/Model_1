@@ -1,15 +1,30 @@
-import {useState} from "react"
+import "./App.css";
+import { useState } from "react";
+function Display() {
+    const [name, setName] = useState("");
 
-const Display = () =>{
-    const[name,setName]=useState("");
-    return(
-        <div>
-            <input type="text" placeholder="Enter Your Name" onChange={
-                (e) => setName(e.target.value)
-            }/>
-            <h1>Welcome {name}!</h1>
-        </div>        
-    )
+    return (
+        <div className="page">
+            <div className="theme-card">
+                <h2>Welcome App</h2>
+
+                <input
+                    className="theme-input"
+                    placeholder="Enter Your Name"
+                    onChange={(e) => setName(e.target.value)}
+                />
+
+                <h3
+                    style={{
+                        textAlign: "center",
+                        marginTop: "20px"
+                    }}
+                >
+                    Welcome {name}
+                </h3>
+            </div>
+        </div>
+    );
 }
 
-export default Display 
+export default Display;

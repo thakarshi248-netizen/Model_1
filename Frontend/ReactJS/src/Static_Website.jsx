@@ -1,12 +1,24 @@
 function Static_Website(){
     const Open_Web=()=>{
-        window.open("https://opulent-space-disco-q7rrqwj9vp9wfxgr6-5500.app.github.dev/website/","_blank");
+        window.open("https://model-1-1-6iur.onrender.com//website/","_blank");
     }
     return(
-        <div>
-            <h1>Welcome to Static_Website</h1>
-            <button onClick={Open_Web}>Open Website</button>
-        </div>    
+       <div className="page">
+    <div className="theme-card text-center">
+        <h2>Static Website</h2>
+
+        <p style={{marginBottom:"20px"}}>
+            Open the hosted website.
+        </p>
+
+        <button
+            className="theme-btn"
+            onClick={Open_Web}
+        >
+            Open Website
+        </button>
+    </div>
+</div>
     )
 }
 

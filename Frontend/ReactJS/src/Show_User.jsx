@@ -22,30 +22,28 @@ function Show_User(){
     };
 
     return (
-        <div>
-            <h2>Registered Users</h2>
+        <div className="table-wrapper">
+    <h2>Registered Users</h2>
 
-            <table border="1" cellPadding="10">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Password</th>
-                    </tr>
-                </thead>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
 
-                <tbody>
-                    {users.map((user) => (
-                        <tr key={user._id}>
-                            <td>{user._id}</td>
-                            <td>{user.Name}</td>
-                            <td>{user.Email}</td>
-                            <td>{user.Password}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+        <tbody>
+            {users.map((user) => (
+                <tr key={user._id}>
+                    <td>{user._id}</td>
+                    <td>{user.Name}</td>
+                    <td>{user.Email}</td>
+                </tr>
+            ))}
+        </tbody>
+    </table>
         </div>
     );
 }

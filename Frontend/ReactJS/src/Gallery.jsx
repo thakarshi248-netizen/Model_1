@@ -2,46 +2,38 @@ import { useEffect, useState } from "react";
 import "./Gallery.css";
 
 function Gallery() {
-
     const [recipes, setRecipes] = useState([]);
 
     useEffect(() => {
-
         fetch("https://dummyjson.com/recipes")
             .then((res) => res.json())
             .then((data) => {
-
                 setRecipes(data.recipes);
-
             })
-            .catch((err) => {
-                console.log(err);
-            });
-
+            .catch((err) => console.log(err));
     }, []);
 
     return (
-        <div>
+        <div className="gallery-page">
+            <h1 className="gallery-title">🍽 Recipe Gallery</h1>
 
-            <h2 className="heading">Recipes Gallery</h2>
+            <p className="gallery-subtitle">
+                Discover delicious recipes
+            </p>
 
-            <div className="card-container">
+            <div className="recipe-grid">
+                {recipes.map((item) => (
+                    <div className="recipe-card" key={item.id}>
+                        <img
+                            src={item.image}
+                            alt={item.name}
+                            className="recipe-image"
+                        />
 
-                {
-                    recipes.map((item) => (
+                        <div className="recipe-content">
+                            <h3>{item.name}</h3>
 
-                        <div className="card" key={item.id}>
-
-                            <img
-                                src={item.image}
-                                alt={item.name}
-                                className="card-image"
-                            />
-
-                            <div className="card-body">
-
-                                <h3>{item.name}</h3>
-
+                            <div className="recipe-details">
                                 <p>
                                     <strong>Cuisine:</strong> {item.cuisine}
                                 </p>
@@ -53,16 +45,11 @@ function Gallery() {
                                 <p>
                                     <strong>Difficulty:</strong> {item.difficulty}
                                 </p>
-
                             </div>
-
                         </div>
-
-                    ))
-                }
-
+                    </div>
+                ))}
             </div>
-
         </div>
     );
 }

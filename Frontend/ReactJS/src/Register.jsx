@@ -1,5 +1,6 @@
 import {  Link } from "react-router-dom"
 import axios from "axios";
+import "./App.css";
 import { useState } from "react";
 function Register()
 {
@@ -18,7 +19,7 @@ function Register()
 
         try {
             const response = await axios.post(
-                "https://opulent-space-disco-q7rrqwj9vp9wfxgr6-5500.app.github.dev/signup",
+                "https://model-1-1-6iur.onrender.com/signup",
                 { Name, Email, Password }
             );
             setName("");
@@ -30,27 +31,52 @@ function Register()
         }
     };
     return(
-        <div>
-            <form onSubmit={insert_data}>
-                <h2>Create Account</h2>
-               
-                <label>Name</label><br></br>
-                <input type="text" placeholder="Full Name" value={Name} onChange={(e)=>setName(e.target.value)} required/>
-                <br></br><br></br>
-                
-                <label>Email</label><br></br>
-                <input type="email" placeholder="Email" value={Email} onChange={(e)=>setEmail(e.target.value)} required/>
-                <br></br><br></br>
-               
-                <label>Password</label><br></br>
-                <input type="password" placeholder="Password" value={Password} onChange={(e)=>setPassword(e.target.value)}  required/>
-                <br></br><br></br>
-             
-                <button type="submit">Sign Up</button>
-               
-                <p>Already have an account? <Link to='/Login'>Login Here</Link></p>
-            </form>
-        </div>
+  <div className="page">
+    <div className="theme-card">
+        <form onSubmit={insert_data}>
+            <h2>Create Account</h2>
+
+            <label>Name</label>
+            <input
+                className="theme-input"
+                type="text"
+                placeholder="Full Name"
+                value={Name}
+                onChange={(e) => setName(e.target.value)}
+            />
+
+            <br /><br />
+
+            <label>Email</label>
+            <input
+                className="theme-input"
+                type="email"
+                placeholder="Email"
+                value={Email}
+                onChange={(e) => setEmail(e.target.value)}
+            />
+
+            <br /><br />
+
+            <label>Password</label>
+            <input
+                className="theme-input"
+                type="password"
+                placeholder="Password"
+                value={Password}
+                onChange={(e) => setPassword(e.target.value)}
+            />
+
+            <br /><br />
+
+            <button className="theme-btn">Sign Up</button>
+
+            <p className="text-center" style={{marginTop:"15px"}}>
+                Already have an account? <Link to="/Login">Login</Link>
+            </p>
+        </form>
+    </div>
+</div>
     )
 }
 

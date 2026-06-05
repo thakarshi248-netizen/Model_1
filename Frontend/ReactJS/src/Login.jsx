@@ -18,44 +18,51 @@ function Login()
     };
 
     return(
-        <div>
-            <form>
-                <h2>Login</h2>
-                
-                <label>Email    </label>
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                />    
-                 <p className={formData.email ? "" : "Error"} id="p1">
-                    {formData.email ? "" : "Email is Required!"}
-                </p>
-                <br></br>
-                
-                <label>Password    </label>
-                <input
-                    type="password"
-                    name="password"
-                    placeholder="Password"
-                    value={formData.password}
-                    onChange={handleChange}
-                    required
-                />
-                <p className={formData.password ? "" : "Error"} id="p1">
-                    {formData.password ? "" : "Password is Required!"}
-                </p>
-                <br></br>
-                
-                <button type="submit">Login</button>
-                <br></br><br></br>
-                
-                <p>New here? <Link to='/Register'>Register</Link></p>
-            </form>
-        </div>
+       <div className="page">
+    <div className="theme-card">
+        <form>
+            <h2>Login</h2>
+
+            <label>Email</label>
+            <input
+                className="theme-input"
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Email"
+            />
+
+            {!formData.email && (
+               <p className="error">Email is Required!</p>
+            )}
+
+            <br />
+
+            <label>Password</label>
+            <input
+                className="theme-input"
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                placeholder="Password"
+            />
+
+            {!formData.password && (
+                <p className="error">Password is required</p>
+            )}
+
+            <br />
+
+            <button className="theme-btn">Login</button>
+
+            <p className="text-center" style={{marginTop:"15px"}}>
+                New here? <Link to="/Register">Register</Link>
+            </p>
+        </form>
+    </div>
+</div>
     )
 }
 

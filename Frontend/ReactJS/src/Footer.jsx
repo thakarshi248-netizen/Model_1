@@ -1,8 +1,11 @@
-function Footer()
-{
-    return(
-        <footer>@ ALL Copyright Reserved</footer>
-    )
+import "./Footer.css";
+
+function Footer() {
+    return (
+        <footer className="footer">
+            © {new Date().getFullYear()} All Rights Reserved | React Demo App
+        </footer>
+    );
 }
 
-export default Footer
+export default Footer;
