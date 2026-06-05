@@ -34,19 +34,19 @@ function Home() {
                 <h3>Quick Projects</h3>
 
                 <button onClick={() => window.open(`${backendUrl}/demo`, "_blank")}>
-                    Demo Project
+                   Pyscript Demo 
                 </button>
 
                 <button onClick={() => window.open(`${backendUrl}/sample`, "_blank")}>
-                    Sample API
+                    Registration Form Demo
                 </button>
 
                 <button onClick={() => window.open(`${backendUrl}/table`, "_blank")}>
-                    Table Data
+                    Table Demo
                 </button>
 
                 <button onClick={() => window.open(`${backendUrl}/web`, "_blank")}>
-                    Live Website
+                    Grail Layout Demo
                 </button>
             </div>
 
