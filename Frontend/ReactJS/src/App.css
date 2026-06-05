@@ -33,7 +33,7 @@ body {
 .theme-card h1,
 .theme-card h2 {
     text-align: center;
-    color: #4f46e5;
+    color: #38bdf8;
     margin-bottom: 20px;
 }
 
@@ -56,7 +56,7 @@ body {
 .theme-btn {
     width: 100%;
     padding: 12px;
-    background: #4f46e5;
+    background: #38bdf8;
     color: white;
     border: none;
     border-radius: 8px;
@@ -95,7 +95,7 @@ table {
 }
 
 th {
-    background: #4f46e5;
+    background:  #38bdf8;
     color: white;
 }
 
@@ -117,7 +117,7 @@ tr:nth-child(even) {
 
 .gallery-title {
     text-align: center;
-    color: #4f46e5;
+   color: #38bdf8;
     margin-bottom: 10px;
 }
 
@@ -156,7 +156,7 @@ tr:nth-child(even) {
 }
 
 .recipe-content h3 {
-    color: #4f46e5;
+    color: #38bdf8;
     margin-bottom: 10px;
 }
 
