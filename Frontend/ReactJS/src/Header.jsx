@@ -9,10 +9,10 @@ function Header() {
             </div>
 
             <nav className="nav-links">
-                <Link to="/">Home</Link>
+                <Link to="/">Portfolio</Link>
+                <Link to="/html demo">HTML Demo</Link>
                 <Link to="/gallery">Gallery</Link>
-                <Link to="/display">Display</Link>
-                <Link to="/counter">Counter</Link>
+                <Link to="/interactive-demo">Interactive Demo</Link>
                 <Link to="/show_user">Show User</Link>
                 <Link to="/static_website">Website</Link>
                 <Link to="/register">Register</Link>
