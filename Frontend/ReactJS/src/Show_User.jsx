@@ -12,7 +12,7 @@ function Show_User(){
     const fetchUsers = async () => {
         try {
             const response = await axios.get(
-                "https://opulent-space-disco-q7rrqwj9vp9wfxgr6-5500.app.github.dev/users"
+                "https://model-1-1-6iur.onrender.com/users"
             );
 
             setUsers(response.data);
